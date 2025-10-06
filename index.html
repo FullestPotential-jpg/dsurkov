@@ -347,7 +347,7 @@
             
             <!-- ЭКРАН ПРИВЕТСТВИЯ -->
             <div id="intro-screen" class="screen">
-                <h2 class="question">Добро пожаловать в Тест на Тип Личности!</h2>
+                <h2 class="question">Добро пожаловать в Genius Test!</h2>
                 <p>Этот тест поможет определить ваш тип личности. Ответьте на 6 вопросов, выбрав наиболее подходящий для вас вариант.</p>
                 <p>Не задумывайтесь слишком долго, полагайтесь на первую реакцию.</p>
                 <div class="navigation">
@@ -441,31 +441,33 @@
             </div>
             
             <!-- ЭКРАН РЕЗУЛЬТАТА -->
-<div id="result-screen" class="screen">
-    <div class="loading" id="email-loading">
-        <div class="spinner"></div>
-        <p>Отправляем результаты на вашу почту...</p>
-    </div>
-    
-    <div class="email-success" id="email-success" style="display: none;">
-        <h3>✅ Результаты отправлены на вашу почту!</h3>
-        <p>Проверьте папку "Входящие" или "Спам"</p>
-    </div>
+            <div id="result-screen" class="screen">
+                <div class="loading" id="email-loading">
+                    <div class="spinner"></div>
+                    <p>Отправляем результаты на вашу почту...</p>
+                </div>
+                
+                <div class="email-success" id="email-success" style="display: none;">
+                    <h3>✅ Результаты отправлены на вашу почту!</h3>
+                    <p>Проверьте папку "Входящие" или "Спам"</p>
+                </div>
 
-    <h2 class="result-title">Ваш тип личности:</h2>
-    <div id="result-type" class="result-type"></div>
-    <div id="result-description" class="result-description"></div>
-    
-    <!-- ДОБАВЛЕННЫЙ ТЕКСТ -->
-    <div style="text-align: center; margin: 25px 0; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
-        <h3 style="margin: 0; font-size: 1.4rem;">🎯 А теперь проверьте свой email!</h3>
-        <p style="margin: 10px 0 0 0; opacity: 0.9;">Мы отправили вам детальный отчет с вашим типом личности</p>
+                <h2 class="result-title">Ваш тип личности:</h2>
+                <div id="result-type" class="result-type"></div>
+                <div id="result-description" class="result-description"></div>
+                
+                <!-- ДОБАВЛЕННЫЙ ТЕКСТ -->
+                <div style="text-align: center; margin: 25px 0; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
+                    <h3 style="margin: 0; font-size: 1.4rem;">🎯 А теперь проверьте свой email!</h3>
+                    <p style="margin: 10px 0 0 0; opacity: 0.9;">Мы отправили вам детальный отчет с вашим типом личности</p>
+                </div>
+                
+                <div class="navigation" style="justify-content: center; margin-top: 30px; gap: 15px; flex-wrap: wrap;">
+                    <button id="restart-btn" onclick="restartTest()">Пройти тест снова</button>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="navigation" style="justify-content: center; margin-top: 30px; gap: 15px; flex-wrap: wrap;">
-        <button id="restart-btn" onclick="restartTest()">Пройти тест снова</button>
-    </div>
-</div>
 
     <script>
         // ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
